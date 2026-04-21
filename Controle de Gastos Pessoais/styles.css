@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background: #1e3c72;
+  color: white;
+}
+
+.container {
+  width: 400px;
+  margin: auto;
+}
+
+input, select, button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.1);
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+button {
+  cursor: pointer;
+}
+
+.remover {
+  background: red;
+  color: white;
+}
+
+.categoria-box {
+  margin-top: 20px;
+}
