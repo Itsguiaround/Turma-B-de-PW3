@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 950px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: #fdfdfd;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.produtos label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.produtos label:hover {
+  background: #eef3ff;
+}
+
+.produtos span {
+  font-weight: bold;
+  color: #2a5298;
+}
+
+.pagamento label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.info {
+  font-size: 13px;
+  background: #eef3ff;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+#parcelasBox {
+  margin: 10px 0;
+}
+
+select {
+  padding: 5px;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  background: #eaf4ff;
+  border-radius: 10px;
+  font-size: 15px;
+}

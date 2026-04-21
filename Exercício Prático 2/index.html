@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Vendas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🛒 Controle de Vendas</h1>
+
+  <div class="grid">
+
+    <div class="card produtos">
+      <h3>Produtos</h3>
+      <label><input type="checkbox" value="19.9"> Camiseta Regata <span>R$19,90</span></label>
+      <label><input type="checkbox" value="59.9"> Camisa Social <span>R$59,90</span></label>
+      <label><input type="checkbox" value="119.9"> Blusa <span>R$119,90</span></label>
+      <label><input type="checkbox" value="39.9"> Pullover <span>R$39,90</span></label>
+      <label><input type="checkbox" value="99.9"> Sapato <span>R$99,90</span></label>
+      <label><input type="checkbox" value="38.9"> Calça <span>R$38,90</span></label>
+    </div>
+
+    <div class="card pagamento">
+      <h3>Pagamento</h3>
+
+      <label><input type="radio" name="pagamento" value="avista" checked onchange="atualizarUI()"> À vista</label>
+      <label><input type="radio" name="pagamento" value="aprazo" onchange="atualizarUI()"> A prazo</label>
+
+      <div id="infoPagamento" class="info"></div>
+
+      <div id="parcelasBox">
+        Parcelas:
+        <select id="parcelas">
+          <option value="2">2x</option>
+          <option value="3">3x</option>
+          <option value="4">4x</option>
+          <option value="5">5x</option>
+        </select>
+      </div>
+
+      <button onclick="calcular()">Calcular</button>
+    </div>
+
+  </div>
+
+  <div class="resultado" id="resultado">
+    Resultado aparecerá aqui...
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
