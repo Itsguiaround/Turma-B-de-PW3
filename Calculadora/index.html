@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora Completa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora Matemática</h1>
+
+    <!-- MULTIPLOS E POTÊNCIAS -->
+    <div class="box">
+      <h2>Múltiplos e Potências</h2>
+
+      <input type="number" id="num1" placeholder="Digite um número">
+      <button onclick="calcularTudo()">Calcular</button>
+
+      <p id="resultado1"></p>
+    </div>
+
+    <!-- PAR OU ÍMPAR -->
+    <div class="box">
+      <h2>Par ou Ímpar</h2>
+
+      <input type="number" id="numPar" placeholder="Digite um número inteiro">
+      <button onclick="verificar()">Verificar</button>
+
+      <p id="resultado2"></p>
+    </div>
+
+    <!-- MÉDIA -->
+    <div class="box">
+      <h2>Média</h2>
+
+      <input type="number" id="m1" placeholder="Número 1">
+      <input type="number" id="m2" placeholder="Número 2">
+      <input type="number" id="m3" placeholder="Número 3">
+      <input type="number" id="m4" placeholder="Número 4">
+
+      <button onclick="media()">Calcular Média</button>
+
+      <p id="resultado3"></p>
+    </div>
+
+    <!-- BHASKARA -->
+    <div class="box">
+      <h2>Bhaskara</h2>
+
+      <input type="number" id="a" placeholder="a">
+      <input type="number" id="b" placeholder="b">
+      <input type="number" id="c" placeholder="c">
+
+      <button onclick="bhaskara()">Calcular</button>
+
+      <p id="resultado4"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
